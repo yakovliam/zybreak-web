@@ -6,6 +6,7 @@ import HomePage from "./pages/home";
 import { AuthProvider } from "./components/auth/auth-provider";
 import Dashboard from "./pages/dashboard";
 import AuthRedirect from "./components/auth/auth-redirect";
+import Redirect from "./pages/redirect";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
                   </RequireAuth>
                 }
               />
-              <Route path="*" element={<div>404</div>} />
+              <Route path="*" element={<Redirect />} />
             </Route>
           </Routes>
         </AuthProvider>
