@@ -1,4 +1,3 @@
-import { Icons } from "@/components/icons";
 import { NavItem } from "@/types";
 
 export type User = {
